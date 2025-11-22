@@ -41,16 +41,16 @@ data class CatalogItem(
 fun CatalogScreen(onItemClick: (CatalogItem) -> Unit) {
 
     val items = listOf(
-        CatalogItem("Gaming Fest", "Novedades del mundo gamer", R.drawable.ic_launcher_foreground),
-        CatalogItem("VR Experience", "Explora la realidad virtual", R.drawable.ic_launcher_foreground),
-        CatalogItem("Indie Dev Expo", "Juegos independientes y creativos", R.drawable.ic_launcher_foreground),
-        CatalogItem("Retro Gaming Day", "Revive clásicos de los videojuegos", R.drawable.ic_launcher_foreground),
-        CatalogItem("E-Sports Arena", "Competencias y torneos profesionales", R.drawable.ic_launcher_foreground),
-        CatalogItem("Tech Builders", "Crea tu propio setup gamer", R.drawable.ic_launcher_foreground),
-        CatalogItem("AI Gaming Talk", "Cómo la IA potencia los videojuegos", R.drawable.ic_launcher_foreground),
-        CatalogItem("Next-Gen Consoles", "Explora la nueva generación de consolas", R.drawable.ic_launcher_foreground),
-        CatalogItem("Unity Bootcamp", "Aprende a crear juegos desde cero", R.drawable.ic_launcher_foreground),
-        CatalogItem("Digital Art Summit", "Arte, animación y diseño 3D", R.drawable.ic_launcher_foreground),
+        CatalogItem("Gaming Fest", "Novedades del mundo gamer", R.drawable.gaming_fest),
+        CatalogItem("VR Experience", "Explora la realidad virtual", R.drawable.vr_experience),
+        CatalogItem("Indie Dev Expo", "Juegos independientes", R.drawable.indie_dev),
+        CatalogItem("Retro Gaming Day", "Revive clásicos retro", R.drawable.retro_day),
+        CatalogItem("E-Sports Arena", "Torres profesionales", R.drawable.esports_arena),
+        CatalogItem("Tech Builders", "Construye tu setup gamer", R.drawable.tech_builders),
+        CatalogItem("AI Gaming Talk", "La IA en videojuegos", R.drawable.ai_gaming),
+        CatalogItem("Next-Gen Consoles", "Nueva generación de consolas", R.drawable.nextgen),
+        CatalogItem("Unity Bootcamp", "Crea juegos en Unity", R.drawable.unity_bootcamp),
+        CatalogItem("Digital Art Summit", "Diseño, arte y modelado 3D", R.drawable.digital_art),
     )
 
     Scaffold(
@@ -94,7 +94,6 @@ fun CatalogScreen(onItemClick: (CatalogItem) -> Unit) {
                         verticalAlignment = Alignment.CenterVertically
                     ) {
 
-                        // Imagen circular mejor presentada
                         Image(
                             painter = painterResource(id = item.image),
                             contentDescription = item.title,

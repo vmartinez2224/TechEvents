@@ -21,7 +21,8 @@ fun NavigationWrapper() {
                 navController.navigate(
                     DetailScreen(
                         title = item.title,
-                        description = item.description
+                        description = item.description,
+                        image = item.image
                     )
                 )
             }
@@ -31,6 +32,7 @@ fun NavigationWrapper() {
             DetailScreen(
                 title = args.title,
                 description = args.description,
+                image = args.image,
                 onBack = { navController.popBackStack() }
             )
         }
